@@ -1,0 +1,4 @@
+# JetBrains
+.idea/
+.venv/
+# *.txt pour exclure tous les fichers en .txt
