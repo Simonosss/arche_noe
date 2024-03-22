@@ -48,3 +48,17 @@ class Game:
 if __name__ == "__main__":
     game = Game()
     game.run()
+
+    time_elapsed = pygame.time.get_ticks() - start_time
+
+    screen.fill(WHITE)  # Remplir la fenêtre avec la couleur blanche
+
+    draw_timer(time_elapsed)  # Dessiner le chronomètre en haut de la fenêtre
+
+    pygame.display.flip()  # Mettre à jour l'affichage
+
+
+    def draw_timer(time_elapsed):
+        # Afficher le temps écoulé en haut de la fenêtre
+        text = font.render("Temps écoulé : " + str(time_elapsed // 1000), True, BLACK)
+        screen.blit(text, (10, 10))
