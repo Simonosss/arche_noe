@@ -125,7 +125,6 @@ while running:
 
     # Mise à jour de l'affichage
     pygame.display.flip()
-    
 
 # Quitter Pygame
 pygame.quit()
